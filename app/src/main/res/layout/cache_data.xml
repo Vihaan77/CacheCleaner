@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/row_padding_vertical"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/row_padding_vertical">
+
+
+    <ImageView
+        android:id="@+id/appicon"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_margin="10dp"/>
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:textColor="@color/White"
+        android:textSize="20sp"
+        android:layout_below="@id/appicon"/>
+
+    <TextView
+        android:id="@+id/appname"
+        android:layout_below="@id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:textColor="@color/White"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/size"
+        android:layout_below="@id/appname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:textColor="@color/White"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/appcach_btne1"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/appname"
+        android:layout_toRightOf="@id/appcache"
+        android:visibility="gone"
+        android:layout_height="50dp"
+        android:text="Cache page"/>
+
+    <Button
+        android:id="@+id/appcache"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/appname"
+        android:layout_toRightOf="@id/size"
+        android:visibility="gone"
+        android:layout_height="50dp"
+        android:text="Cache Clean"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/White"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    tools:context="com.cacheClean.datacleaner.MainActivity">
+
+
+
+   <!-- <ImageButton
+        android:id="@+id/Img_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/settings"
+        android:layout_toRightOf="@id/cache_btn"/>
+-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cached data"
+        android:layout_marginTop="10dp"
+        android:id="@+id/cache_txt"
+        android:textColor="@color/black"
+        android:textSize="20sp"/>
+
+    <Button
+        android:id="@+id/cache_btn"
+        android:layout_width="wrap_content"
+        android:text="clean all cache"
+        android:layout_toRightOf="@id/cache_txt"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/appcach_btne"
+        android:layout_width="wrap_content"
+        android:text="Cache page"
+        android:layout_toRightOf="@id/cache_btn"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black"/>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_below="@+id/cache_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        android:scrollbars="vertical" />
+
+</RelativeLayout>

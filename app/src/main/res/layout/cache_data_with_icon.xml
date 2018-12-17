@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/row_padding_vertical"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/row_padding_vertical"
+    android:background="@color/black">
+
+
+   <ImageView
+       android:id="@+id/boxer"
+       android:layout_width="30dp"
+       android:layout_height="30dp"
+       android:src="@drawable/boxer" />
+
+    <TextView
+        android:id="@+id/appnam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_margin="2sp"
+        android:text="Myboxer.app"
+        android:layout_toRightOf="@id/boxer"
+        android:textColor="@color/White"/>
+
+    <TextView
+        android:id="@+id/sze"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@id/appnam"
+        android:layout_below="@id/appnam"
+        android:textColor="@color/White"
+        android:text="48MB"
+        android:textSize="20sp"/>
+
+</RelativeLayout>
